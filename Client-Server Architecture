@@ -1,0 +1,38 @@
+Features of client/server
+Communication between the client (person giving request) and server (giving response) via a common protocol and a server can only 
+accommodate only limited number of client requests at a time so it uses a system based to priority to respond to the requests.
+It gives authentication for secured transactions.
+
+Web server in a client server environment
+A Web server is software or hardware that uses HTTP (Hypertext Transfer Protocol) and other protocols to respond to client 
+requests made over the World Wide Web (WWW).The Web server process is an example of the client/server model. 
+
+Role of the presentation layer
+The presentation layer acts as a translator between the application and the network, mainly addressing the syntax representation of user
+information.
+
+They say this architecture is secure, how is it done in your opinion?
+The presentation helps in encrypting the data so they allow secure transaction between the client and server and the transport and 
+network layer make sure the packets reaches the correct port.The datalink layer makes sure error free data frame transfer from one 
+side to another of physical link.
+
+Database Server 
+Database servers are used to store and manage databases that are stored on the server and to provide data access for authorized users.
+This type of server keeps the data in a central location that will be a back-end system. It also allows users and applications to 
+centrally access the data across the network.It performs tasks such as data analysis, storage, data manipulation, archiving etc
+
+What are Super servers in client server environments?
+A super-server starts other servers when needed, normally with access to them checked by a TCP wrapper.This can be ideal for
+workstations used for local web development, client/server development[citation needed] or low-traffic daemons with occasional usage.
+
+2-Tier and 3-Tier architecture
+2 Tier => The client on one machine and the server and database on one machine, i.e. two machines where Presentation layer runs on a 
+client (PC, Mobile, Tablet, etc) and data is stored on a Server.
+3 Tier => We have three different machines one for each client, server and a separate machine dedicated to database(presentation tier,
+application tier and dbase tier).This DBMS architecture contains an Application layer between the user and the DBMS, which is 
+responsible for communicating the user's request to the DBMS system and send the response from the DBMS to the user.The application 
+layer(business logic layer) also processes functional logic, constraint and rules before passing data to the user or down to the DBMS.
+
+What is a File server?
+Server theat provides access to the files.It acts as a central file storage location that can be accessed by multiple systems.
+In a business setting where security is important, a file server may require all client systems to log in before accessing the server.
