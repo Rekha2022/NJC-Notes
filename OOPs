@@ -1,0 +1,91 @@
+Why do we use implementation from 2 interfaces in JAVA
+JAVA doesn't support multiple inheritence so to get multiple class implementaion for a class we use 2 interfaces in JAVA. 
+So that it can acquire featuers of both interface.
+
+Practical Scenario for OOPs concept.
+Im taking example of mobile.Nowdays we have lot varities of phone like iPhone,Samsung,Oppo etc...for all basic characteristics/functions 
+will be same but each phone have there own differnt features. If we take example the basic functions like recieving call,make a call, make a 
+text mesages are same basic needs for all the phone. So if we male a CLASS(real time entities) for :mobile: and the diff manufacturing companies can be
+considered as different :OBJECTS:. Objects are instance of classes.Few features like:
+Mobile           => Class
+IEMI code        =>Attributes/datatypes
+IsSingleSim
+Processor
+SimCard
+BluetoothConnection => Methods
+MakeACall
+RecieveACall
+TextMessage
+GetWifiConn
+GetIEMICode
+
+The four main pillars as we know in OOPs concept are Abstraction(hiding the information details and display the functionalities),
+Encapsulation(level of abstraction i.e how much details should be exposed to the customer),Polymorphism(overloading or overriding function 
+ie it can be complie time polymporphism where the function is overloaded at compile time while in run time polymorphism 
+function overrided at runtime) and Inheritence(inheriting common features from the parent or subclass so it helps in reusability,extentability,
+override of the code).
+
+Now lets go back to our mobile phone example:
+
+While we type numbers for calling a person  we press the numbers it can be seen in the screen right.But we doen't know how is it 
+getting concatinated on the screen.So here we see the property of:ABSTRACTION: where we are able to call make call press numbers but what actually 
+happens we are not aware of or it will be an abstract variable/method.This is called abstraction. In classes, we can create methods that can be 
+called and used by the users of the class but users will have no idea what these methods do internally. 
+
+:ENCAPSULATION: states the level of Abstraction to the visible data that we need.It says how much access should be given to particular details.
+In our mobile example if we take the feature of Bluetooth.We are able to connect our mobile to our friend mobile using bluetooth but
+it won't give us permission to make calls/make a text message for them. So that is the level of details it provides to us and is called 
+encapsulation of data or we can tell if we connect our mobile to friend and the friend is connected to third person we won't be able to 
+access the third person. Here comes the encapsulation role.A class has access modifiers such as public, private, protected, and internal. 
+These access modifiers allows properties and methods to be exposed or restricted to the outside world.
+
+:POLYMORPHISM:can be defined as the ability of using the same name for doing different things.If we take example of our iPhone 7 or plus 
+and takes its camera features just a click() will take photo but we have more options like Potraint mode or SlowMotion mode to take 
+pictures where the same click funtion happens but with different mode.So its adding an attribute mode to the click function.This feature 
+can be preciesly called as compile time polymorphism where it knows whichn methode should be taken during compile time.Compiler checks the 
+type and number of parameters passed to the method and decides which method to call and it will give an error if there are no methods
+that matches the method signature of the method that is called at compile time.
+Another one is when we use TextMessage() where we usally send a message but when we want to send a groupMessage then it will have to 
+overrise the TextMessage to group.Its an example for dynamic/runtime polymorphism.
+
+:INHERITANCE: In short its feature where you can get the properties from a parent or child class.The common attribute/functions can be 
+inherited.In our example if we take Mobile class its common basic features like MakeACall(),ReceiveACall and TextMessagecan should be 
+used in all different mobiles so Mobile can be a parent class and other diff mobiles can be child class which extend the feature of the
+parent class. The inheritence can be of different types:
+1. Single level : Parent(Mobile) ----> Child(iPhone)
+2. Multi level : Parent(Mobile) ----> Child(iPhone) ----> subChild(Iphone10/11).(The common features of iPhone remains same whileit have added
+features in each release so the will extend the its parent and child features plus added one)
+3. Hierarchal inheritence :Multilple derived classes for single base class.
+                              Parent(Mobile)
+                              !       !
+                            Child1    Child2
+                            (iPhone)  (Samsung)
+4. Hybrid Inheritance :Single, Multilevel, & hierarchal inheritance all together construct a hybrid inheritance.
+                              Parent(Mobile)
+                              !         !
+                            Child1    Child2
+                            (iPhone)  (Samsung)
+                              !         !
+                            subChild1  subChild2
+                            (iPhone10)  (Samsung S10)
+5. Multiple Inheritance :Multiple inheritance where derived class will extend from multiple base classes. But as in Java directly we cannot
+ use this functionality we use Interfaces for getting this feature established.If we take an interface it is similar to a class but 
+ without implementation & only declaration of properties, methods, delegates & events. Interface actually enforces the class to have
+ a standard contract to provide all implementation to the interface members.Interface is defined with the keyword :interface:.
+ All properties & methods with in the interface should be implemented if it is been used. That's the rule of interface.
+ For example if we say we have two base class Mobile and Telephone where both have basic feature called dial if we just use multiple 
+ inheritance in Java it get confused to take which dial function.So to avoid this we use interface as both dial have same properties and 
+ features so it can be used by the inheriting class without confusion.
+         
+                               
+
+
+
+
+
+
+
+
+
+
+
