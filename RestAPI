@@ -1,0 +1,74 @@
+Explain REST and RESTFUL?
+REST(Represtational State Transfer) is an architectural pattern for creating web services while RESTful service is one which implements 
+this pattern. 
+
+Mention what are the HTTP methods supported by REST?
+GET - to retrieve data from dbase
+PUT- Update/Replace the records
+POST- To create the record
+DELETE- To delete the record
+PATCH- Partial update or modify the records.
+
+Explain the architectural style for creating web API?
+REST is a software architectural style that defines the set of rules to be used for creating web services. Web services which follow
+the REST architectural style are known as RESTful web services. It allows requesting systems to access and manipulate web resources by
+using a uniform and predefined set of rules.
+
+Explain the RESTFul Web Service?
+Restful Web Service is a lightweight, maintainable, and scalable service that is built on the REST architecture. Restful Web Service, 
+expose API from your application in a secure, uniform, stateless manner to the calling client. The calling client can perform predefined
+operations using the Restful service.
+
+Explain what is a “Resource” in REST?
+REST architecture treats every content as a resource. These resources can be Text Files, Html Pages, Images, Videos or Dynamic Business
+Data.REST Server simply provides access to resources and REST client accesses and modifies the resources. REST uses various 
+representations to represent a resource where Text, JSON, XML.The most popular representations of resources are XML and JSON.
+
+Which protocol is used by RESTful web services?
+HTTP
+
+What is messaging in RESTful web services?
+The RESTful Web Service uses HTTP as as method of communication between client and server.Where the message send from client is known 
+as HTTP request and the response given back server is known as HTTP response. So basically this technique of transfering data is known 
+as messaging. 
+
+State the core components of an HTTP Request?
+HTTP request mainy consist of 3 parts:
+1. Startline/Request line: contain <method> the <url> <http:version>
+2. Header: host:website,Accept:text/html,Accept-language
+3. Body: data content or the orginal data requested by the client
+
+State the core components of an HTTP response?
+Same as request it have 3 parts:
+1. Startline/Response line: <http:version> <status code>
+2. Header: host:website,Accept:text/html,Accept-language
+3. Body: file requested 
+
+What do you understand about payload in RESTFul web service?
+Payload is carrying capacity of a packet or transmission data.
+
+Explain the caching mechanism?
+Caching is a technique to speed up data lookups (data reading). Instead of reading the data directly from it source, which could be
+a database or another remote system, the data is read directly from a cache on the computer that needs the data
+
+List the main differences between SOAP and REST?
+SOAP stands for Simple Object Access Protocol whereas REST stands for Representational State Transfer.
+SOAP only works with XML formats whereas REST work with plain text, XML, HTML and JSON. 
+SOAP cannot make use of REST whereas REST can make use of SOAP.
+REST ias a connectionless protocol while SOAP is not.
+Compared to REST SOAP is more secure.
+SOAP is a protocol while REST is a architectual style in which webservice can be implemented using RESTful services.
+
+Enlist advantages and disadvantages of ‘Statelessness’.
+A stateless system is one that has no resident memory used to store information between sessions.Stateless means the state of the 
+service doesn't ersist between subsequent requests and response. Each request carries its own user credentials and is individually
+authenticated. Examples of stateless applications is the HTML applications used to run internet sites and pages. These applications
+are stateless as they do not keep and store information about users or user activity after a user has left a site.
+Benefits of stateless applications is that the maintaining parties don't have the responsibility of managing the resident memory. 
+Stateless applications can be less costly than a similar stateful application. 
+They can also be less complex, as there’s no requirement to take in data and keep it on hand, to record it for use later. 
+Every session is brand new and the same programming occurs.
+Disadv of this applications is that, as mentioned, they will not keep information about a particular user session. 
+This issue is evident in the design of cookies to handle user session information on the internet. Generally speaking, using cookies 
+is less efficient than any in-memory system would be. Webmasters have the responsibility of manipulating and maintaining the cookies.
+So stateless systems are inherently less capable.
