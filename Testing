@@ -1,0 +1,71 @@
+Different layers of Testing
+1. Unit Testing
+Unit Testing is a level of software testing where individual function/method of a software are tested. 
+The purpose is to validate that each function of the software performs as designed. This is normally performed by software
+developers.
+2. Integration Testing
+Integration Testing is a level of software testing where individual units are combined and tested as a group. 
+The purpose of this level of testing is to expose faults in the interaction between integrated units.Done by the testers.
+3.System Testing
+System Testing is a level of software testing where a complete and integrated software is tested. The purpose of this test 
+is to evaluate the system's compliance with the specified requirements.
+4.Acceptance Testing
+Acceptance Testing is a level of software testing where a system is tested for acceptability. The purpose of this test is to 
+evaluate the system's compliance with the business requirements and assess whether it is acceptable for delivery.
+
+Types of Acceptance Testing:
+1. UAT(User Acceptance Testing)-UAT is to assess whether the Product is working for the user, correctly for the usage.
+2. BAT(Bussiness Acceptance Testing)-This is to assess whether the Product meets the business goals and purposes or not. Businness 
+   focus on financial benefits so example when the product undergo changes it results in extra budget so does its covered the 
+   bussiness requirements.
+3. CAT(Contract Acceptance Testing)-Prdt released within the contract period or not.
+4. RAT(Regulation Acceptance Testing)- Whether the prdt follows the rules and regulation set up by the government.
+5. OAT(Operational Acceptance Testing)- Is a non-functional testing. It mainly includes testing of recovery, compatibility, maintainability, 
+   technical support availability, reliability etc
+6. Alpha Testing- Internal UAT where internal member in the organization will test the product other than the developers and testers of
+   that particular project such as product manangement or customer support.So they can provide improvement in look and feel of the product
+   or any end result changes.
+7. Beta Testing- End User testing
+
+Techniques for Testing
+BLACK BOX TESTING is defined as a testing technique in which functionality of the Application Under Test (AUT) is tested 
+without looking at the internal code structure, implementation details and knowledge of internal paths of the software.
+This type of testing is based entirely on software requirements and specifications. In BlackBox Testing we just focus on inputs and 
+Techniques for Testingoutput of the software system without bothering about internal knowledge of the software program.Mostly done by testers
+used in Integration testing
+WHITE BOX TESTING is testing of a software solution's internal structure, design, and coding. In this type of testing, the code is
+visible to the tester. It focuses primarily on verifying the flow of inputs and outputs through the application, improving design and 
+usability, strengthening security. White box testing is also known as Clear Box testing, Open Box testing, Structural testing, Transparent
+Box testing, Code-Based testing, and Glass Box testing. It is usually performed by developers.Used in Unit testing.
+GRAY BOX TESTING is a software testing method which is a combination of Black Box Testing method and White Box Testing method.
+
+Types Of Testing
+1. Manual Testing : Its a type of Software Testing where Testers manually execute test cases without using any automation tools. 
+                    Manual Testing is the most primitive of all testing types and helps find bugs in the software system.
+2. Automation Testing : It means using an automation tool to execute your test case suite.
+
+Automated software testing is important due to the following reasons:
+1. Automated testing saves money and time.
+2. Manual testing is difficult to test for multilingual sites manually while Automation doesn't face this issue if its programmed properly.
+3. Automation does not require Human intervention. You can run automated test unattended (overnight)
+4. Automation increases the speed of test execution.
+5. Automation helps increase Test Coverage
+6. Manual Testing can become boring and hence error-prone.
+7. Automation testing helps in Regression Testing.It is a type of software testing  to confirm that a recent program or code change has not 
+   adversely affected existing features.Regression Testing is nothing but a full or partial selection of already executed test cases 
+   which are re-executed to ensure existing functionalities work fine.
+8. Automated testing helps in Load Testing. It refers to the practice of modeling the expected usage of a software program by
+   simulating multiple users accessing the program concurrently.It is performed to test the performance of the system or
+   software application under extreme load.tools used jmeter ,load runner tool.
+9. It helps in performance testing.Performance testing is the process of determining the speed, responsiveness and stability
+   of a computer, network, software program or device under a workload.
+   
+  JUnit Testing
+  JUnit is an open source Unit Testing Framework for JAVA. It is useful for Java Developers to write and run repeatable tests.
+  As the name implies, it is used for Unit Testing of a small chunk of code. Developers who are following test-driven methodology
+  must write and execute unit test first before any code.
+   
+   
+
+
+
